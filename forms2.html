@@ -1,0 +1,114 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Online Registration Form</title>
+    <style>
+        #overall
+        {
+            margin:0 auto;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+        }
+        header
+        {
+            width:500px;
+            padding:10px;
+            border-radius: 5px;
+            border:0.5px solid rgb(115, 115, 115);
+        }
+        #section1
+        {
+            width:500px;
+            padding:10px;
+            border-radius: 5px;
+            border:0.5px solid rgb(115, 115, 115);
+        }
+        #heading1
+        {
+            font-family:Arial, Helvetica, sans-serif;
+            margin-bottom:0px;
+        }
+        #para1
+        {
+            font-size:12px;
+            font-family:Arial, Helvetica, sans-serif;
+            margin-top:0px;
+        }
+        footer
+        {
+            width:500px;
+            padding:10px;
+            border-radius: 5px;
+            border:0.5px solid rgb(115, 115, 115);
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        input[type=submit]
+        {
+            background-color: #17BD5B;
+            border:0px solid white;
+            padding:8px 20px;
+            border-radius: 4px;
+            color:white;
+            font-size:10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="overall">
+        <header>
+<h2 id="heading1">Conference Online Registration</h2>
+            <p id="para1">Please fill in the form below. We'll contact you as soon as possible.</p>
+        </header>
+        <section id="section1">
+            <form>
+                <table>
+                    <tr>
+                        <th>
+  <label style="display:block;text-align:left;padding:10px;">Full Name <span style="color:red;"><sup>*</sup></span></label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input style="display:block;padding:6px;" type="text" id="txt1" size="30">
+                        </th>
+                        <th>
+                                 <input style="display:block;padding:6px;" type="text" id="txt2" size="30">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p style="display:block;font-size:10px;text-align:left;">First Name</p>
+                        </th>
+                        <th>
+                            <p style="display:block;font-size:10px;text-align:left;">Last Name</p>
+                        </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <label style="display:block;text-align:left;padding:10px;">Area<span style="color:red;">*</span></label>
+                      </th>
+                      <td>
+                        <td><select name="please select" rows="2" cols="3"  name="name" >
+                          <option>select</option>
+                          <option>Annur</option>
+                          <option>Karamadai</option>
+                          <option>Mettupalayam</option>
+                          <option>avinashi</option>
+                      </select>
+                        
+                      </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <footer>
+            <input type="submit" value="Submit Form" id="submit"/>
+        </footer>
+    </div>
+</body>
+</html>
