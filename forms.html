@@ -3,29 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
+    <title>Regisration Form</title>
+    <style>
+        div#overall 
+        {
+              margin:0 auto;
+              display: grid; 
+              justify-content: center;
+              align-items: center;
+             width: 100%;
+              padding: 20px;
+              
+        }
+        header 
+        {
+           max-width: 500%;
+           padding: 20px;
+           border-radius: 5px;
+           border:0.5px solid black;
+           width: 100%;
+        }
+        h1#head 
+       {
+        font-family: Arial;
+        margin-bottom:0px;
+       }
+       #para 
+       {
+        font-size:12px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top:0px;
+       }
+       #section1 
+        {
+          width:100%;
+           padding:20px;
+           border-radius: 5px;
+           border:0.5px solid black;
+        }
+        footer{
+            max-width: 700%;
+           padding:20px 10px;
+           border-radius: 5px;
+           border:0.5px solid black;
+           display: grid; 
+              justify-content: center;
+              align-items: center;
+            width:103%;
+        }
+        input[type=submit]
+        {
+            background-color: #17BD5B ;
+            border: 0PX Solid white;
+            padding: 8px 20px;
+            border-radius: 4px;
+            color: white;
+            font-size:15px;
+        }
+      
+    </style>
 </head>
 <body>
-    <form>
-        <table>
-            <tr>
-       <th><label>Enter your First Name</label></th>
-        <td><input type="text" placeholder="type your firstname" name="firstname"></td>
-</tr>
-       <tr>
-        <th><label>Enter  your last Name</label></th>
-        <td><input type="text" placeholder="type your lastname" name="lastname"></td>
-        </tr>
+    <div id="overall">
+    <header>
+        <h2 id="head">Conference online registration</h2>
+        <p id="para">Please fill in the form below as soon as possible</p>
+    </header>
+    <section id="section1">
+    <table>
         <tr>
-        <th><label>Enter your password</label></th>
-        <td><input type="password" placeholder="type your password" name="password">
-            </td>
+            <th>
+                <label style="display:block;text-align:left;padding:10px;">Full Name <span style="color:red;"><sup>*</sup></span></label>
+                                      </th>
+                                  </tr>
+                                  <tr>
+                                      <th>
+                                          <input style="display:block;padding:6px;" type="text" id="txt1" size="30">
+                                      </th>
+                                      <th>
+                                               <input style="display:block;padding:6px;" type="text" id="txt2" size="30">
+                                      </th>
+                                  </tr>
+                                  <tr>
+                                      <th>
+                                          <p style="display:block;font-size:10px;text-align:left;">First Name</p>
+                                      </th>
+                                      <th>
+                                          <p style="display:block;font-size:10px;text-align:left;">Last Name</p>
+                                      </th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>
+                <label style="display: block; text-align: left; padding:10px;">Area <span style="color:red;">*</label>
+            </th>
             </tr>
             <tr>
-        <th colspan="2"><input type="submit"></th>
+            <td>
+                <select   style="display: block; padding:6px; width:150%;">
+                    <option value="select">Please Select</option>
+                    <option>Annur</option>
+                    <option>Karamadai</option>
+                    <option>Mettupalayam</option>
+                    <option>avinashi</option>
+                    <option>srvp</option>
+                </select>
+            </td>
+        </tr>
+       </table>
+       <table>
+        <tr>
+            <th>
+                <label style="display: block; text-align: left; padding:10px;">Address <span style="color:red;">*</label>
+            </th>
+
+           
+                  <tr>
+                        <td>
+                            <input style= "padding:10px; display: grid; border-radius: 5px;" type="text" size="50" >Street Address
+                        </td>
+                  </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <input style= "padding:10px; display: grid; border-radius: 5px;" type="text" size="50" >Street Address Line2
+                    </td>
+                </tr>
+            </table>
+        <table>
+            <tr>
+                <td>
+                    <input style="display: block; padding:6px;" type="text" size="30">
+                    <p style="display: block; text-align: left; margin-top: 0px; border-radius: 5px; padding:10px; font-size: 12;">City</p>
+                </td>
+                <td>
+                    <input style="display: block; padding:6px;" type="text" size="30">
+                    <p style="display: block; text-align: left; margin-top: 0px; border-radius: 5px; padding:10px; font-size: 12;">State/province</p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <input style="display: block; padding:6px;" type="text" size="30">
+                    <p style=" margin-top: 0px; border-radius: 5px; padding:10px; font-size: 12; font-family:'Times New Roman', Times, serif;">Postal/Zip Code</p>
+                </td>
+                <td>
+                
+                    <select style="display: block; padding:6px; width:180%;">
+                        <option value="Select">Please Select</option>
+                        <option value="India">India</option>
+                        <option value="Japan">Japan</option>
+                        <option value="US">US</option>
+                        <option value="Australia">Australia</option>
+                        <option value="China">China</option>
+                      </select> 
+                    <p style=" margin-top: 0px; border-radius: 5px; padding:10px; font-size: 12;">Country</p>
+                </td>
+            </tr>
+            <table>
+            <tr>
+                <th><label  style="display: block; text-align: left; padding:10px;">
+                    E-mail<span style="color: red;">*</span>
+                </label></th>
+                </tr>
+                <tr>
+                <td><input style="display:block; padding:6px; border-radius: 0.5px;" type="text" size="30">example@example.com
+                    </td>
+                    </tr>
+           </tr>
+           </table>
+           <table>
+            <tr>
+                <th><label  style="display: block; text-align: left; padding:10px;">
+                    Phone Number<span style="color: red; margin-bottom: 10px;">*</span>
+                </label></th>
+                </tr>
+                <tr>
+                <td><input style="display:block; padding:6px; border-radius: 0.5px;" type="text" size="30" placeholder="(000) 000-0000">
+                    </td>
+            </tr>
+            <tr>
+           <th><label style="display: block; text-align: left; padding:10px;">First time to attend this Conference?<span style="color: red;">*</span></label></th></tr>
+      <tr>
+           <td><input type="checkbox" name="Yes" value="Yes">Yes</td>
+       </tr>
+       <tr>
+      <td><input type="checkbox" name="No" value="No">No</td>
+        </tr>
+        <tr>
+           <th> <label style="display: block; text-align: left; padding:10px;">I will attend <span style="color: red;">*</span></label></th>
+           </tr>
+           <tr>
+            <td><input type="checkbox" id="event1" name="date of event1" value="date of event1">
+           <label  for="event1">Event1-Date of Event1</label></td></tr>
+             <tr>
+              <td><input type="checkbox" id="event2" name="date of event2" value="date of event2">
+                <label  for="event2">Event2-Date of Event2</label></td>
+             </tr>
+             <tr>
+            <td>    <input type="checkbox" id="event3" name="date of event3" value="date of event3">
+                <label  for="event3">Event3-Date of Event3</label></td>
+        </tr>
+        <tr>
+          <th><label style="display: block; text-align: left; padding:10px;">What's Your T-Shirt Size <span style="color: red;">*</span></label></th>
+          </tr>
+
+          <tr>
+      <td> <select  style="display: block; padding:6px; width:100%;">
+        <option value="Please Select">Please Select</option>
+        <option value="l size">l Size</option>
+        <option value="s size">S Size</option>
+        <option value="xl size">Xl Size</option>
+        <option value="xxl size">XXL Size</option>
+        <option value="xxxl size">XXXL Size</option>
+      </select> 
+    </td>
         </tr>
         </table>
-    </form>
-    
+            <section id="section2">
+                <table>
+                    <tr>
+                        <th><label style="display: block; text-align: left; padding: 6px; ">Regisration Fee <span style="color: red;">*</span></label></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="personal">
+                            <label > Conference Regisration Fee (Personal) $50.00
+                            </label>
+                            <hr>                                    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="personal">
+                            <label > Conference Regisration Fee (Corporate) $300.00</label></td>
+                         
+                    </tr>
+                    <tr>
+                        <td>  <label># of participants</label>
+                            <input type="number" name="num" min="1" max="6">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable>
+                               <pre>                                Total     $0.0</pre>
+                            </lable>
+                            <hr>
+                        </td>
+                    </tr>
+                </table>
+                
+              </section>
+              <table>
+                <tr>
+             <th><label style="padding: 6px;">Related Files </label></th>
+             <td><input type="file" name="filetoupload" value="fileoupload"></td>
+              </tr>
+              </table>
+              <input style="padding: 6px;" type="checkbox"><a href="#terms and condition">I agree to terms & condition <span style="color: red;">*</span></a>
+            </section>
+                                               
+    <footer> 
+            <input type="Submit" value="Submit Form" id="submit">
+    </footer>
+</section>
+</div>
 </body>
-</html> 
+</html>
